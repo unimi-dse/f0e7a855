@@ -1,6 +1,6 @@
-#This function creates a barplot representing the number of fatal accidents for each airline in the two periods:
-#1985-1999 and 2000-2014.
-#Note: this function requires the package plotly.
+#' This function creates a barplot representing the number of fatal accidents for each airline in the two periods:
+#' 1985-1999 and 2000-2014.
+#' Note: this function requires the package plotly.
 
 #' @export
 #'
