@@ -2,6 +2,8 @@
 #1985-1999 and 2000-2014.
 #Note: this function requires the package plotly.
 
+#' @export
+#'
 
 plot1 <- function(x, y, tipe = 'bar', title) {
   library(plotly)

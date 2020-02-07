@@ -3,6 +3,8 @@
 #are actually the 67.9% of the toal airlines.
 #Note: this function requires the prepare function.
 
+#' @export
+#'
 
 plot2 <- function(){
   library(plotly)

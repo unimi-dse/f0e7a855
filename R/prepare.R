@@ -5,6 +5,8 @@
 #Then it adds the new variables to the dataset and returns the new dataset.
 #Note: this function requires the package tidyverse.
 
+#' @export
+#'
 
 prepare <- function() {
   fa_rate<-air_safety$fatal_accidents_00_14/air_safety$incidents_00_14

@@ -2,6 +2,8 @@
 #based on the correlation matrix.
 #Note: this function requires the package corrplot.
 
+#' @export
+#'
 
 correlation <- function(){
   library(corrplot)
