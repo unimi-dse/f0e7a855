@@ -8,6 +8,18 @@ Note: this function requires the package plotly.}
 \usage{
 plot1(x, y, tipe = "bar", title)
 }
+\arguments{
+\item{x}{factor}
+
+\item{y}{integer}
+
+\item{tipe}{character}
+
+\item{title}{character}
+}
+\value{
+piechart
+}
 \description{
 This function creates a barplot representing the number of fatal accidents for each airline in the two periods:
 1985-1999 and 2000-2014.
