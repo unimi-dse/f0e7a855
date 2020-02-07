@@ -6,8 +6,7 @@
 #'
 
 correlation <- function(){
-  library(corrplot)
   numeric.var<-sapply(air_safety,is.numeric)
-  corr.matrix<-cor(air_safety[,numeric.var])
-  corrplot(corr.matrix,main="\n\nCorrelation Matrix",method="number")
+  corr.matrix<-corrplot::cor(air_safety[,numeric.var])
+  corrplot::corrplot(corr.matrix,main="\n\nCorrelation Matrix",method="number")
 }

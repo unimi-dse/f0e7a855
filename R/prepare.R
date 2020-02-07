@@ -10,8 +10,7 @@
 
 prepare <- function() {
   fa_rate<-air_safety$fatal_accidents_00_14/air_safety$incidents_00_14
-  library(tidyverse)
   air_safety<-cbind(air_safety,fa_rate) %>%
-    mutate(safety = fa_rate<0.2)
+    tidyverse::mutate(safety = fa_rate<0.2)
   return(air_safety)
 }

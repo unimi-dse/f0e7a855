@@ -7,9 +7,8 @@
 #'
 
 plot2 <- function(){
-  library(plotly)
   data <- prepare()
-  p <- plot_ly(data, labels = ~data$safety, type = 'pie') %>%
+  p <- plotly::plot_ly(data, labels = ~data$safety, type = 'pie') %>%
     layout(title = 'Percentage of safe airlines according to the fatal accidents rate',
            xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
            yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))

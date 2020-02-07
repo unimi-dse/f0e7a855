@@ -7,8 +7,9 @@ Maintainer: Maria Pia Chiatante <maria.chiatante1@studenti.unimi.it>
 Description: This package contains a dataset made up of 56 airlines and 8 variables; the aim is to analyze the 
     safety of these major airlines through the number of total incidents and fatal accidents they experienced
     from 1985 to 2014.
-License: What license is it under?
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.0.2
-Imports: tidyverse, plotly, gmodels, corrplot
+Imports: devtools, tidyverse, plotly, gmodels, corrplot
+Depends: R (>= 3.5.0)
