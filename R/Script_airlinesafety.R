@@ -17,6 +17,7 @@ prepare <- function() {
 
 prepare()
 
+##NON SERVE
 #Add a new variable called "safety", which returns TRUE if the fatal accidents rate
 #of the airline is smaller than 0.2, otherwise it returns FALSE
 fa <- function(){
@@ -27,7 +28,7 @@ fa <- function(){
   dim(air_safety)
 }
 
-fa()
+fa() ##NON SERVE
 
 plot1 <- function(x, y, tipe = 'bar', title) {
   #Data Visualization with plotly
