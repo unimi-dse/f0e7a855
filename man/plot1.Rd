@@ -6,7 +6,7 @@
 1985-1999 and 2000-2014.
 Note: this function requires the package plotly.}
 \usage{
-plot1(x, y, tipe = "bar", title)
+plot1(x, y, tipe = "bar", air_safety)
 }
 \arguments{
 \item{x}{factor}
@@ -15,7 +15,7 @@ plot1(x, y, tipe = "bar", title)
 
 \item{tipe}{character}
 
-\item{title}{character}
+\item{air_safety}{data.frame}
 }
 \value{
 piechart

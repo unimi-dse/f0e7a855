@@ -2,11 +2,15 @@
 #' - the first one is a simple linear regression of fatal_accidents_00_14 on incidents_00_14
 #' - the second one is a multiple linear regression of fatal_accidents_00_14 on incidents_00_14 and fatalities_00_14.
 #' As a result, it returns the summary of the two models.
-
+#'
+#' @param air_safety data.frame
+#'
+#' @importFrom stats lm
+#'
 #' @export
 #'
 
-reg <- function(){
+reg <- function(air_safety){
   #Simple Linear Regression
   reg_1<-lm(air_safety$fatal_accidents_00_14~air_safety$incidents_00_14, data=air_safety)
   summary(reg_1)

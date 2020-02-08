@@ -3,6 +3,8 @@
 #'
 #' @param airline integer
 #'
+#' @importFrom stats aggregate
+#'
 #' @export
 #'
 

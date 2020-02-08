@@ -2,12 +2,15 @@
 #' based on the correlation matrix.
 #' Note: this function requires the package corrplot.
 #'
+#' @param air_safety data.frame
+#'
+#' @importFrom stats cor
 #'
 #' @export
 #'
 
-correlation <- function(){
-  numeric.var<-sapply(air_safety,is.numeric)
-  corr.matrix<-corrplot::cor(air_safety[,numeric.var])
+correlation <- function(air_safety){
+  numeric.var<-sapply(air_safety, is.numeric)
+  corr.matrix<-cor(air_safety[,numeric.var])
   corrplot::corrplot(corr.matrix,main="\n\nCorrelation Matrix",method="number")
 }

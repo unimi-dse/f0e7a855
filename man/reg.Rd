@@ -7,7 +7,10 @@
 - the second one is a multiple linear regression of fatal_accidents_00_14 on incidents_00_14 and fatalities_00_14.
 As a result, it returns the summary of the two models.}
 \usage{
-reg()
+reg(air_safety)
+}
+\arguments{
+\item{air_safety}{data.frame}
 }
 \description{
 This function runs two linear regression models:

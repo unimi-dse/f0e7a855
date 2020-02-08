@@ -4,13 +4,15 @@
 #' of the airline is smaller than 0.2, otherwise it returns FALSE.
 #' Then it adds the new variables to the dataset and returns the new dataset.
 #' Note: this function requires the package tidyverse.
-
+#'
+#' @importFrom magrittr %>%
+#'
 #' @export
 #'
 
 prepare <- function() {
   fa_rate<-air_safety$fatal_accidents_00_14/air_safety$incidents_00_14
   air_safety<-cbind(air_safety,fa_rate) %>%
-    tidyverse::mutate(safety = fa_rate<0.2)
+    dplyr::mutate(safety = fa_rate<0.2)
   return(air_safety)
 }

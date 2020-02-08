@@ -6,7 +6,10 @@
 based on the correlation matrix.
 Note: this function requires the package corrplot.}
 \usage{
-correlation()
+correlation(air_safety)
+}
+\arguments{
+\item{air_safety}{data.frame}
 }
 \description{
 This function analyses the correlation between the numeric variables in the dataset and returns the correlation plot
