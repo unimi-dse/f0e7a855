@@ -12,7 +12,5 @@ correlation(air_safety)
 \item{air_safety}{data.frame}
 }
 \description{
-This function analyses the correlation between the numeric variables in the dataset and returns the correlation plot
-based on the correlation matrix.
-Note: this function requires the package corrplot.
+This function needs the argument air_safety
 }

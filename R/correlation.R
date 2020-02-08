@@ -2,6 +2,8 @@
 #' based on the correlation matrix.
 #' Note: this function requires the package corrplot.
 #'
+#' This function needs the argument air_safety
+#'
 #' @param air_safety data.frame
 #'
 #' @importFrom stats cor

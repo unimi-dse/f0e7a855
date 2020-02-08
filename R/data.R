@@ -4,7 +4,7 @@
 #'
 #'
 #'
-#' #' @format A data frame with 56 rows and 8 variables:
+#' @format A data frame with 56 rows and 8 variables:
 #' \describe{
 #'   \item{airline}{name of the airline}
 #'   \item{avail_seat_km_per_week}{Available seat kilometers flown every week}
