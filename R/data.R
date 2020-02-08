@@ -1,3 +1,5 @@
+#' Airline Safety Dataset
+#'
 #' A dataset made up of 56 observations, representing airlines, and 8 variables, such as the number of incidents
 #' and fatal accidents each airline experienced in the periods 1985-1999 and 2000-2014.
 #'

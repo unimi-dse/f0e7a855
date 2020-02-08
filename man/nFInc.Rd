@@ -2,8 +2,7 @@
 % Please edit documentation in R/nFInc.R
 \name{nFInc}
 \alias{nFInc}
-\title{This function requires as the input the number associated to one airline and returns the number of fatal incidents
-experienced by that airline between 2000 and 2014.}
+\title{Number of fatal accidents}
 \usage{
 nFInc(airline)
 }
@@ -11,5 +10,9 @@ nFInc(airline)
 \item{airline}{integer}
 }
 \description{
-This function needs the argument airline
+This function requires as the input the number associated to one airline and returns the number of fatal accidents
+experienced by that airline between 2000 and 2014.
+}
+\details{
+This function needs the argument airline.
 }

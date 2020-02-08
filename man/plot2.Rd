@@ -2,10 +2,7 @@
 % Please edit documentation in R/plot2.R
 \name{plot2}
 \alias{plot2}
-\title{This function creates a pie chart representing the precentual frequency of safe airlines, according to
-the fatal accidents rate: note that the null observations come from 0/0 fatal accidents rate, so the safe airlines
-are actually the 67.9% of the toal airlines.
-Note: this function requires the prepare function.}
+\title{Pie Chart}
 \usage{
 plot2()
 }

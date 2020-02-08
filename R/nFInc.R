@@ -1,7 +1,9 @@
-#' This function requires as the input the number associated to one airline and returns the number of fatal incidents
+#' Number of fatal accidents
+#'
+#' This function requires as the input the number associated to one airline and returns the number of fatal accidents
 #' experienced by that airline between 2000 and 2014.
 #'
-#' This function needs the argument airline
+#' This function needs the argument airline.
 #'
 #' @param airline integer
 #'

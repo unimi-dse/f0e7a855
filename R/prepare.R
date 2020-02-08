@@ -1,3 +1,5 @@
+#' Prepare the dataset
+#'
 #' This function creates a new variable called "Fatal accidents rate", given by the number of
 #' fatal accidents in 2000-2014 over the number of incidents in 2000-2014.
 #' It also creates a new variable called "safety", which returns TRUE if the fatal accidents rate

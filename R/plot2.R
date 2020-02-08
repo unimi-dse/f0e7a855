@@ -1,3 +1,5 @@
+#' Pie Chart
+#'
 #' This function creates a pie chart representing the precentual frequency of safe airlines, according to
 #' the fatal accidents rate: note that the null observations come from 0/0 fatal accidents rate, so the safe airlines
 #' are actually the 67.9% of the toal airlines.

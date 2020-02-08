@@ -2,10 +2,7 @@
 % Please edit documentation in R/reg.R
 \name{reg}
 \alias{reg}
-\title{This function runs two linear regression models:
-- the first one is a simple linear regression of fatal_accidents_00_14 on incidents_00_14
-- the second one is a multiple linear regression of fatal_accidents_00_14 on incidents_00_14 and fatalities_00_14.
-As a result, it returns the summary of the two models.}
+\title{Linear Regressions}
 \usage{
 reg(air_safety)
 }
@@ -13,5 +10,10 @@ reg(air_safety)
 \item{air_safety}{data.frame}
 }
 \description{
-This function needs the argument air_safety
+This function runs two linear regression models: the first one is a simple linear regression of the number of
+fatal accidents between 2000 and 2014 on the number of incidents between 2000 and 2014; the second one is a
+multiple linear regression of the number of fatal accidents between 2000 and 2014 on he number of incidents
+between 2000 and 2014 and he number of fatalities between 2000 and 2014.
+As a result, it returns the summary of the two models.
+This function needs the argument air_safety.
 }
