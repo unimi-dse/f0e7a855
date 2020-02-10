@@ -8,10 +8,9 @@
 #'
 #' @param x factor
 #' @param y integer
-#' @param tipe character
-#' @param air_safety data.frame
+#' @param type character
 #'
-#' @return piechart
+#' @return barplot
 #'
 #' @importFrom graphics layout
 #' @importFrom magrittr %>%
@@ -19,9 +18,10 @@
 #' @export
 #'
 
-plot1 <- function(x, y, tipe = 'bar', air_safety) {
-  b <- plotly::plot_ly(air_safety, x = ~air_safety$airline, y = ~air_safety$fatal_accidents_85_99, type = 'bar', name = '1985-1999') %>%
-    plotly::add_trace(y = ~air_safety$fatal_accidents_00_14, name = '2000-2014') %>%
+plot1 <- function(x, y, type = 'bar') {
+  data <- prepare()
+  b <- plotly::plot_ly(data, x = ~data$airline, y = ~data$fatal_accidents_85_99, type = 'bar', name = '1985-1999') %>%
+    plotly::add_trace(y = ~data$fatal_accidents_00_14, name = '2000-2014') %>%
     plotly::layout(yaxis = list(title = 'Number of Fatal Accidents'), barmode = 'Airline')
   return(b)
 }

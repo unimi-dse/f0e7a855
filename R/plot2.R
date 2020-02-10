@@ -8,6 +8,8 @@
 #' @importFrom magrittr %>%
 #' @importFrom graphics layout
 #'
+#' @return piechart
+#'
 #' @export
 #'
 

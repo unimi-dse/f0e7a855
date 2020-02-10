@@ -4,19 +4,17 @@
 \alias{plot1}
 \title{Barplot}
 \usage{
-plot1(x, y, tipe = "bar", air_safety)
+plot1(x, y, type = "bar")
 }
 \arguments{
 \item{x}{factor}
 
 \item{y}{integer}
 
-\item{tipe}{character}
-
-\item{air_safety}{data.frame}
+\item{type}{character}
 }
 \value{
-piechart
+barplot
 }
 \description{
 This function creates a barplot representing the number of fatal accidents for each airline in the two periods:
