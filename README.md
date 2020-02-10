@@ -33,23 +33,53 @@ library(airlinesafety)
 
 The function `prepare()` creates a new variable called "Fatal accidents rate", given by the total number of fatal accidents in 2000-2014 over the total number of incidents in 2000-2014. 
 It also creates a new variable called "safety", which has value 'TRUE' if the fatal accidents rate of the airline is smaller than 0.2, otherwise it has value 'FALSE'.
-Then it adds the new variables to the dataset and returns as output the updated dataset.
+Then it adds the new variables to the dataset and returns as the output the updated dataset.
 
+### nFInc
 
+The function `nFInc()` requires as the input the number associated to one airline (from 1 to 56) and returns as the output the number of fatal accidents experienced by that airline between 2000 and 2014. 
+For instance, in order to know the number of fatal accidents experienced by Alitalia from 2000 to 2014, we can just type the following:
 
-### Fibonacci
-
-The function `fibonacci()` is implemented in C++ and computes the Fibonacci Sequence.
-
-```R
-fibonacci(15)
+```{r, echo=FALSE}
+nFInc(10)
 ```
 
-### Shiny App
+### Plot 1
 
-The function `sampleGUI()` runs a Graphical User Interface to evaluate the projects from https://github.com/unimi-dse 
+The function `plot1()` creates a barplot representing the number of fatal accidents for each airline in the two periods: 1985-1999 and 2000-2014.
 
 ```R
-sampleGUI()
+plot1()
 ```
+
+### Plot 2
+
+The function `plot2()` creates a pie chart representing the precentual frequency of safe airlines, according to the fatal accidents rate. 
+
+```R
+plot2()
+```
+
+Note that the null observations come from 0/0 fatal accidents rate, so the safe airlines are actually the 67.9% of the total airlines.
+
+### Correlation
+
+The function `correlation()`analyses the correlation between the numeric variables in the dataset and returns the correlation plot based on the correlation matrix.
+
+```R
+correlation(air_safety)
+```
+
+This plot will be useful for the function `reg()`
+
+### Reg
+
+The function `reg()` runs two linear regression models: the first one is a simple linear regression of the number of fatal accidents between 2000 and 2014 on the number of incidents between 2000 and 2014; the second one is a multiple linear regression of the number of fatal accidents between 2000 and 2014 on the number of incidents between 2000 and 2014 and the number of fatalities between 2000 and 2014.
+As a result, it returns the summary of the two models.
+
+```R
+reg(air_safety)
+```
+
+
 
