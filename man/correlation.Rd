@@ -4,10 +4,7 @@
 \alias{correlation}
 \title{Correlation Plot}
 \usage{
-correlation(air_safety)
-}
-\arguments{
-\item{air_safety}{data.frame}
+correlation()
 }
 \description{
 This function analyses the correlation between the numeric variables in the dataset and returns the correlation plot

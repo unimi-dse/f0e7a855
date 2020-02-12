@@ -13,8 +13,8 @@
 #'
 
 prepare <- function() {
-  fa_rate<-air_safety$fatal_accidents_00_14/air_safety$incidents_00_14
-  air_safety<-cbind(air_safety,fa_rate) %>%
+  fa_rate<-airlinesafety::air_safety$fatal_accidents_00_14/airlinesafety::air_safety$incidents_00_14
+  air_safety<-cbind(airlinesafety::air_safety,fa_rate) %>%
     dplyr::mutate(safety = fa_rate<0.2)
   return(air_safety)
 }

@@ -6,15 +6,13 @@
 #'
 #' This function needs the argument air_safety
 #'
-#' @param air_safety data.frame
-#'
 #' @importFrom stats cor
 #'
 #' @export
 #'
 
-correlation <- function(air_safety){
-  numeric.var<-sapply(air_safety, is.numeric)
-  corr.matrix<-cor(air_safety[,numeric.var])
+correlation <- function(){
+  numeric.var<-sapply(airlinesafety::air_safety, is.numeric)
+  corr.matrix<-cor(airlinesafety::air_safety[,numeric.var])
   corrplot::corrplot(corr.matrix,main="\n\nCorrelation Matrix",method="number")
 }

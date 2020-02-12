@@ -4,10 +4,7 @@
 \alias{reg}
 \title{Linear Regressions}
 \usage{
-reg(air_safety)
-}
-\arguments{
-\item{air_safety}{data.frame}
+reg()
 }
 \description{
 This function runs two linear regression models: the first one is a simple linear regression of the number of
